@@ -1,0 +1,110 @@
+/* Основные стили для страницы */
+
+/* Убираем отступы у всей страницы */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #1a1a2e;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для контейнера */
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Заголовок */
+h1 {
+    color: white;
+    font-size: 30px;
+}
+
+/* Стили для шара */
+.ball {
+    width: 200px;
+    height: 200px;
+    background-color: #1e3a5f;
+    border-radius: 100px;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid #4a90d9;
+}
+
+/* Внутренняя часть шара */
+.ball-inner {
+    width: 120px;
+    height: 120px;
+    background-color: #0a0a15;
+    border-radius: 60px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Знак вопроса */
+.question-mark {
+    color: #4a90d9;
+    font-size: 40px;
+    font-weight: bold;
+    display: block;
+}
+
+/* Ответ на вопрос */
+.answer {
+    color: #00ff88;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Поле ввода */
+input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4a90d9;
+    border-radius: 10px;
+    background-color: #16213e;
+    color: white;
+    margin: 10px;
+}
+
+/* Подсказка в поле ввода */
+input::placeholder {
+    color: #888888;
+}
+
+/* Поле ввода при фокусе */
+input:focus {
+    border-color: #00ff88;
+    outline: none;
+}
+
+/* Кнопка */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4a90d9;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Кнопка при наведении */
+button:hover {
+    background-color: #2d5a87;
+}
+
+/* Результат */
+.result {
+    color: #cccccc;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
