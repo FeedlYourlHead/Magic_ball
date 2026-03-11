@@ -1,0 +1,193 @@
+/* Основные стили для страницы */
+
+/* Убираем отступы у всей страницы */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #1a1a2e;
+    font-family: Arial, sans-serif;
+    display: block;
+    min-width: auto;
+    min-height: auto;
+}
+
+/* Стили для контейнера */
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Заголовок */
+h1 {
+  color: white;
+  font-size: 30px;
+}
+
+/* Стили для шара */
+.ball {
+  width: 200px;
+  height: 200px;
+  background-color: #1e3a5f;
+  border-radius: 100px;
+  margin: 20px auto;
+  display: block;
+  border: 5px solid #4a90d9;
+}
+
+/* Внутренняя часть шара */
+.ball-inner {
+  width: 120px;
+  height: 120px;
+  background-color: #0a0a15;
+  border-radius: 60px;
+  margin: 35px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Знак вопроса */
+.question-mark {
+  color: #4a90d9;
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+}
+
+/* Ответ на вопрос */
+.answer {
+  color: #00ff88;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Поле ввода */
+input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #4a90d9;
+  border-radius: 10px;
+  background-color: #16213e;
+  color: white;
+  margin: 10px;
+}
+
+/* Подсказка в поле ввода */
+input::placeholder {
+  color: #888888;
+}
+
+/* Поле ввода при фокусе */
+input:focus {
+  border-color: #00ff88;
+  outline: none;
+}
+
+/* Кнопка */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4a90d9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Кнопка при наведении */
+button:hover {
+  background-color: #2d5a87;
+}
+
+/* Результат */
+.result {
+  color: #cccccc;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+.ball.shaking {
+  animation: shake 0.2s ease-in-out infinite;
+}
+
+/* Стили для текста загрузки */
+.loading {
+  color: #4a90d9;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Стили для неактивной кнопки */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Кнопка очистки */
+.clear-btn {
+  background-color: #666;
+  margin-top: 20px;
+}
+
+.clear-btn:hover {
+  background-color: #555;
+}
+
+/* Контейнер истории */
+.history-container {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #16213e;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Заголовок истории */
+.history-container h3 {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Список истории */
+.history-list {
+  color: #888;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.history-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #2a2a4a;
+  font-size: 14px;
+}
+
+.history-list li:last-child {
+  border-bottom: none;
+}
